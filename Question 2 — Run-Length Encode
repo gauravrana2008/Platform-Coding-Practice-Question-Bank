@@ -1,0 +1,29 @@
+
+#include <stdio.h>
+#include <string.h>
+
+#define MAX 1000
+
+int main() {
+    char str[MAX];
+
+    scanf("%999s", str);
+
+    int count = 1;
+
+    int len = strlen(str);
+
+    for (int i = 1; i <= len; i++) {
+
+        if (str[i] == str[i - 1]) {
+            count++;
+        } else {
+            printf("%c%d", str[i - 1], count);
+            count = 1;
+        }
+    }
+
+    printf("\n");
+
+    return 0;
+}
