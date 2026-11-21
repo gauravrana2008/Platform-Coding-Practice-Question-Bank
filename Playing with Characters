@@ -1,0 +1,28 @@
+
+#include <stdio.h>
+
+int main() {
+    char ch;
+    char s[100];
+    char sentence[100];
+
+    // Read a single character
+    scanf("%c", &ch);
+
+    // Read a string (without spaces)
+    scanf("%s", s);
+
+    // Read a complete sentence (with spaces)
+    scanf(" %[^\n]", sentence);
+
+    // Print the character
+    printf("%c\n", ch);
+
+    // Print the string
+    printf("%s\n", s);
+
+    // Print the sentence
+    printf("%s\n", sentence);
+
+    return 0;
+}
